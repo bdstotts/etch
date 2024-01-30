@@ -1,0 +1,15 @@
+.box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.test{
+    background-color: RED;
+
+}
