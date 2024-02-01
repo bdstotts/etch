@@ -1,3 +1,12 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;    
+}
+
+
+
 .box{
     width: 100px;
     height: 100px;
@@ -7,9 +16,27 @@
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
+    padding-left: 5px;
+    
+}
+
+.rowBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.firstBox{
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-color: darkred;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding-left: 5px;
 }
 
 .test{
-    background-color: RED;
+    background-color: cornflowerblue;
 
 }
