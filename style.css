@@ -7,11 +7,7 @@
     height: 400px;
 }
 
-
-
 .box{
-    /*width: 100px;
-    height: 100px;*/
     display: flex;
     background-color: blue;
     flex-direction: column;
@@ -24,6 +20,13 @@
     
 }
 
+/*.box:hover{
+
+    background-color: red;
+
+}*/
+
+
 .rowBox{
     display: flex;
     flex-direction: row;
@@ -31,7 +34,12 @@
     flex-shrink: 1;
 }
 
-.test{
+#test{
     background-color: cornflowerblue;
 
+}
+
+.hovered{
+    background-color: red;
+    color: yellow;
 }
