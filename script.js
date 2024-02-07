@@ -1,35 +1,62 @@
 const container = document.querySelector('#container');
-let box = document.getElementsByClassName("box");
-let dimension = 16;
+let dimension = 8;
+//rowBox
+const rowBox = document.createElement("div");
+rowBox.classList.add("rowBox");
+//box
+const box = document.createElement("div");
+box.classList.add("box");
+box.textContent = "b";
 
+container.appendChild(rowBox);
 
-
-for (let i=0; i<dimension; i++){
-    const rowBox = document.createElement("div");
-    rowBox.classList.add("rowBox");
-    //rowBox.textContent = "This is a row box";
-    container.appendChild(rowBox);
-
-       for(j=0;j<dimension;j++){
-            let box = document.createElement("div");
-            box.classList.add("box");
-            //box.classList.add("hovered2");
-            box.textContent = "b"
-            rowBox.appendChild(box);
-
-              //console.log(box.);
-       }
-
+for(i=0; i<dimension; i++){
+    rowBox.appendChild(box.cloneNode(true));
 }
 
-//console.log(box.classList);
+for(i=0;i<dimension-1; i++){
+    container.appendChild(rowBox.cloneNode(true));
+}
 
-document.getElementsByClassName("box").onmouseover = function()
-{mouseOverBox()};
-function mouseOverBox(){
-    document.getElementsByClassName("box").classList.add("hovered")}
+console.log(container)
+console.log(rowBox)
+console.log(box)
+
+/*const boxes = document.getElementsByClassName("box");
+
+console.log(boxes)
+
+boxes.onmouseover = function(){
+    mouseOver()};
+    function mouseOVer(){
+        document.getElementsByClassName("box").classList.add("hovered")
+    }
+
+document.getElementsByClassName("classy").onmouseover = function()
+{mouseOverOne()};
+function mouseOverOne(){
+    document.getElementsByClassName("classy").classList.add("hovered")}
+
+
 
 document.getElementById("test").onmouseover = function()
 {mouseOverHeader()};
 function mouseOverHeader(){
-    document.getElementById("test").classList.add("hovered")}
+    document.getElementById("test").classList.add("hovered")}*/
+
+const boxy = document.querySelectorAll("div.box");
+var hovered = "hovered"
+
+function change(el, hovered) {
+    [].forEach.call(boxy, function(box) {
+      if (box.className === "box") {
+        el.classList.add(hovered);
+      }
+    });
+}
+[].forEach.call(boxy, function(box) {
+    box.addEventListener("mouseover", function() {
+      change(this, hovered);
+    });
+  });
+

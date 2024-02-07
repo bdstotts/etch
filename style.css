@@ -17,14 +17,17 @@
     padding-left: 0px;
     flex-grow:1;
     flex-shrink: 1;
+    border-color: black;
+    border-width: 5px;
     
 }
 
-/*.box:hover{
+.box:hover{
 
-    background-color: red;
+    background-color: purple;
 
-}*/
+
+}
 
 
 .rowBox{
@@ -32,11 +35,20 @@
     flex-direction: row;
     flex-grow: 1;
     flex-shrink: 1;
+    border: black;
+    border-width: 5px;
 }
 
 #test{
     background-color: cornflowerblue;
 
+}
+
+.classy{
+    background-color: azure;
+}
+.classy:hover{
+    background-color: brown;
 }
 
 .hovered{
