@@ -5,6 +5,7 @@
     margin: 0px;    
     width: 400px;
     height: 400px;
+    margin-top: 50px;
 }
 
 .box{
@@ -60,4 +61,21 @@
    /* width: 50px;
     height: 20px;*/
     display: inline-flex;
+}
+
+.resBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+#resolution{
+    max-width: 40px;
+    display: inline-flex;
+    max-height: 1em;
+}
+
+p {
+    display: flex;
 }

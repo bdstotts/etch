@@ -11,7 +11,8 @@ var boxy = ""
 //...................................................................................
 function setCanvas() {
   document.querySelectorAll('.rowBox').forEach(e => e.remove());
-  dimension = prompt("Enter a number 10-100 to select your etch-a-sketch resolution. Higher means better definition.");
+  dimension = document.getElementById("resolution").value;
+  //dimension = prompt("Enter a number 10-100 to select your etch-a-sketch resolution. Higher means better definition.");
   console.log(dimension)
 
   if (dimension>100){
