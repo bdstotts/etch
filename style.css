@@ -55,3 +55,9 @@
     background-color: red;
     color: yellow;
 }
+
+.clear{
+   /* width: 50px;
+    height: 20px;*/
+    display: inline-flex;
+}
